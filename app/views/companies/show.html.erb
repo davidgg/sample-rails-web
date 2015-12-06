@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @company.email %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @company.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @company.location %>
+</p>
+
+<p>
+  <strong>Desc:</strong>
+  <%= @company.desc %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @company.website %>
+</p>
+
+<p>
+  <strong>Public email:</strong>
+  <%= @company.public_email %>
+</p>
+
+<%= image_tag @company.logo.url(:medium) %>
+
+<%= link_to 'Edit', edit_company_path(@company) %> |
+<%= link_to 'Back', companies_path %>
